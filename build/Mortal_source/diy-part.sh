@@ -5,7 +5,7 @@
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 # 修改IP项的EOF于EOF之间请不要插入其他扩展代码，可以删除或注释里面原本的代码
 
-git clone -b 21.02 https://github.com/281677160/openwrt-package package/fxtx
+git clone -b openwrt-21.02 https://github.com/immortalwrt/luci package/luci
 
 
 cat >$NETIP <<-EOF
