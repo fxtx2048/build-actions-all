@@ -18,7 +18,7 @@ uci set network.lan.delegate='0'                                            # �
 uci commit network                                                          # 不要删除跟注释,除非上面全部删除或注释掉了
 #uci set dhcp.lan.ignore='1'                                                 # 关闭DHCP功能
 #uci commit dhcp                                                             # 跟‘关闭DHCP功能’联动,同时启用或者删除跟注释
-#uci set system.@system[0].hostname='OpenWrt-fxtx'                            # 修改主机名称为OpenWrt-123
+uci set system.@system[0].hostname='OpenWrt'                            # 修改主机名称为OpenWrt-123
 EOF
 
 
@@ -43,4 +43,4 @@ sed -i 's/"终端"/"命令窗"/g' `grep "终端" -rl ./`
 sed -i 's/"USB 打印服务器"/"打印服务"/g' `grep "USB 打印服务器" -rl ./`
 sed -i 's/"Web 管理"/"Web"/g' `grep "Web 管理" -rl ./`
 sed -i 's/"管理权"/"改密码"/g' `grep "管理权" -rl ./`
-sed -i 's/"Argon 主题设置"/"Argon设置"/g' `grep "Argon 主题设置" -rl ./`
+#sed -i 's/"Argon 主题设置"/"Argon设置"/g' `grep "Argon 主题设置" -rl ./`
